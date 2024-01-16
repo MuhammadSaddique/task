@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+</body>
+<script>
+
+
+
+
+let students = [];
+
+
+for (let i = 1; i <= 3; i++) {
+    let name = prompt(`Enter name for student ${i}:`);
+    let mark = parseFloat(prompt(`Enter marks for student ${i}:`));
+    students.push({ name, mark });
+}
+
+
+let maxMarkStudent = students.reduce((max, student) => (student.mark > max.mark ? student : max), students[0]);
+
+
+let minMarkStudent = students.reduce((min, student) => (student.mark < min.mark ? student : min), students[0]);
+
+
+console.log("\nResults:");
+console.log(`Student with Maximum Marks:`);
+console.log(`Name: ${maxMarkStudent.name}`);
+console.log(`Marks: ${maxMarkStudent.mark}`);
+console.log("\nStudent with Minimum Marks:");
+console.log(`Name: ${minMarkStudent.name}`);
+console.log(`Marks: ${minMarkStudent.mark}`);
+
+
+    </script>
+</html>

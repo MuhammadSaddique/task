@@ -1,0 +1,35 @@
+body {margin:0;
+    width: 322px;
+    height: 192px;
+    }
+    .caption
+        {
+            background-color:BLUE;
+            color:white;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 20px;
+            border-style:solid;
+            border-width:1px;
+            border-color:white;
+            text-align:center;
+        }
+    .countup {
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    .countup .timeel {
+      display: inline-block;
+      padding: 9px;
+      background: #151515;
+      margin: 0;
+      color: white;
+      margin-left: 0px;
+      border-radius: 5px 0 0 5px;
+    }
+    .countup span[class*="timeRef"] {
+      border-radius: 0 10px 10px 0;
+      margin-left: 0;
+      background: #e8c152;
+      color: black;
+    }
+    

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Angles
+    </h1>
+</body>
+<script>
+    
+function calculateCircleArea(radius) {
+    return Math.PI * Math.pow(radius, 2);
+}
+
+function calculateRectangleArea(length, width) {
+    return length * width;
+}
+
+
+function calculateTriangleArea(base, height) {
+    return 0.5 * base * height;
+}
+
+
+let circleRadius = 5;
+let rectangleLength = 8;
+let rectangleWidth = 4;
+let triangleBase = 6;
+let triangleHeight = 3;
+
+let circleArea = calculateCircleArea(circleRadius);
+let rectangleArea = calculateRectangleArea(rectangleLength, rectangleWidth);
+let triangleArea = calculateTriangleArea(triangleBase, triangleHeight);
+
+console.log(`Area of the Circle: ${circleArea.toFixed(2)}`);
+console.log(`Area of the Rectangle: ${rectangleArea.toFixed(2)}`);
+console.log(`Area of the Triangle: ${triangleArea.toFixed(2)}`);
+
+</script>
+</html>
